@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,0.804359243697479) 61%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.box h2 {
+    font-size: 1.75em;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#hardware {
+    display: flex;
+    gap: 10px;
+}
+
+#itemInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    outline: none;
+}
+
+#itemInput:focus {
+    border-color: #31d5eb;
+}
+
+#hardware button {
+    background: #4bae4f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+#hardware button:hover {
+    background: #45a049;
+}
+
+ol {
+    padding: 0;
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+ol li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+ol li p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+ol li.done p {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+ol li .remove {
+    background: #f00;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#clear {
+    margin-top: 20px;
+    background: #f00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+#clear:hover {
+    background: #e60000;
+}
